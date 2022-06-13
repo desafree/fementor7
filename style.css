@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;600;700&display=swap');
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'League Spartan', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0px;
+}
+
+.btn.btn-book {
+  color: white;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 2.5px;
+  text-align: left;
+  padding: 25px 54px;
+  border: 1px solid white;
+  background-color: #111;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+nav {
+  position: absolute;
+  top: 65px;
+  left: 165px;
+}
+
+header {
+  background-image: url(./images/homepage/hero-bg-desktop@2x.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 260px 165px 200px;
+}
+
+header .text {
+  color: white;
+  max-width: 500px;
+}
+
+header .text h1 {
+  font-size: 80px;
+  font-weight: 300;
+  line-height: 80px;
+  letter-spacing: -1px;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+header .text p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0px;
+  text-align: left;
+  margin-bottom: 65px;
+}
+
+section {
+  padding: 120px 165px;
+  padding-bottom: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 125px;
+  margin-top: -180px;
+}
+
+section .img-container {
+  background-image: url(./images/homepage/enjoyable-place-desktop@2x.jpg);
+  flex-basis: 540px;
+  height: 720px;
+  position: relative;
+  z-index: 2;
+  background-size: cover;
+  box-shadow: 0px 75px 100px -50px rgba(56, 66, 85, 0.503223);
+}
+
+section .text {
+  max-width: 450px;
+}
+
+section .text h3 {
+  margin-top: 55px;
+  color: #242b37;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -0.5px;
+  text-align: left;
+  margin-bottom: 27px;
+}
+
+section.local .img-container {
+  background-image: url(./images/homepage/locally-sourced-desktop@2x.jpg);
+  position: relative;
+}
+
+section.local .img-container img {
+  position: absolute;
+  top: 280px;
+  right: -100px;
+}
+
+section.menu {
+  background-color: #111;
+  transform: translateY(-60px);
+  padding: 200px 165px;
+  display: flex;
+  align-items: flex-start;
+}
+
+section.menu .text h3,
+section.menu .text p {
+  color: white !important;
+}
+
+section.menu .dishes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+section.menu .dishes .dish {
+  display: flex;
+  gap: 60px;
+  color: white;
+}
+
+section.menu .dishes .dish .img-container {
+  flex-basis: 128px;
+  height: 96px;
+  position: relative;
+  z-index: 2;
+}
+
+section.menu .dishes .dish .img-container img {
+  position: absolute;
+  right: -20px;
+  top: 20px;
+  z-index: 1;
+}
+
+section.menu .img-container:nth-child(1) {
+  background-image: url(./images/homepage/salmon-desktop-tablet.jpg);
+}
+
+section.menu .img-container:nth-child(2) {
+  background-image: url(./images/homepage/chocolate-desktop-tablet.jpg);
+}
+
+section.events {
+  padding: 160px 165px;
+  margin-top: -60px;
+}
+
+section.events .img-container {
+  position: relative;
+}
+
+section.events .img-container img {
+  position: absolute;
+  top: -50px;
+  left: -50px;
+}
+
+section.events .text p {
+  margin-bottom: 65px;
+}
+
+section.events .text .btn.btn-book {
+  margin-bottom: 80px;
+  display: inline-block;
+}
+
+section.events ul {
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 2.5px;
+  text-align: center;
+  color: #4c4c4c;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+section.events li {
+  list-style: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+section.events li.active {
+  color: #111;
+  position: relative;
+}
+
+section.events li.active::before {
+  content: url(./images/patterns/pattern-divide.svg);
+  position: absolute;
+  left: -50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+section.reservation {
+  margin-top: 0px;
+  background-image: url(./images/homepage/ready-bg-desktop@2x.jpg);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 90px 165px;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -0.5px;
+  text-align: left;
+}
+
+footer {
+  background-color: #111;
+  padding: 80px 165px;
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 2px;
+  text-align: left;
+  text-transform: uppercase;
+}
